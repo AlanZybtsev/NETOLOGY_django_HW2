@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Ингридиенты паста </title>
+</head>
+<body>
+    <p><a href = '{% url "home" %}'> Вернуться к выбору блюда </a></p>
+    <h1>Ингредиенты блюда - паста</h1>
+    {% for ing, qty in ingredients.items %}
+        <h2>{{ ing  }}: {{ qty  }}</h2>
+    {% endfor %}
+</body>
+</html>

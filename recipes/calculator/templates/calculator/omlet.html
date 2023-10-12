@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Ингридиенты омлет </title>
+</head>
+<body>
+    <p><a href = '{% url "home" %}'> Вернуться к выбору блюда </a></p>
+    <h1>Ингредиенты блюда - омлет</h1>
+    {% for ingredient, quantity in ingredients.items %}
+        <h2>{{ ingredient }}: {{ quantity }}</h2>
+    {% endfor %}
+</body>
+</html>
